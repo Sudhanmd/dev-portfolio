@@ -9,9 +9,7 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">
-        <p>Sudan MD</p>
-      </div>
+      <div class="logo">Sudan MD</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -24,9 +22,7 @@
     </nav>
 
     <nav id="hamburger-nav">
-      <div class="logo">
-        <p>Sudan MD</p>
-      </div>
+      <div class="logo">Sudan MD</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" ondblclick="toggleMenu()">
           <span></span>
@@ -49,7 +45,11 @@
 
     <section>
       <div class="section__pic-container">
-        <img src="" alt="sudan profile picture" />
+        <img
+          src="./assets/profilee.jpg"
+          alt="Sudan MD profile picture"
+          class="profile-pic"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -103,7 +103,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Backend Development</p>
+              <p>7+ months <br />Backend Development</p>
             </div>
             <div class="details-container">
               <img
@@ -223,37 +223,47 @@
     </section>
 
     <section id="education">
-      <p class="section__text__p1">Browse My</p>
+      <!-- <p class="section__text__p1">Browse My</p> -->
       <h1 class="title">Education</h1>
       <div class="education-details-container">
         <div class="education-containers">
           <div class="details-container">
             <h3>Bachelor's Degree</h3>
-            <p>Computer Science</p>
-            <p>University Name</p>
-            <p>Year of Graduation</p>
+            <p>Computer Science & Engineering</p>
+            <p>University Name : Muthayammal Engineering College @Rasipuram</p>
+            <p>Year of Graduation : 2024 (2020-2024)</p>
+            <p>CGPA : 8.05</p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+      <!-- <p class="section__text__p1">Explore My</p> -->
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="experience-containers">
           <div class="details-container">
             <h3>Backend Developer</h3>
-            <p>Company Name</p>
-            <p>Duration</p>
-            <p>Key Responsibilities and Achievements</p>
+            <p>Coducer Technologies Pvt Ltd @Bangalore</p>
+            <p>7+ months</p>
+            <p style="color: #696969e7">
+              Key Responsibilities and Achievements
+            </p>
+            <p>
+              Developed and maintained robust and scalable backend systems using
+              Node.js. Collaborated with cross-functional teams to analyze,
+              design, and implement new features. Optimized database queries and
+              implemented caching strategies to improve performance. Contributed
+              to the development of RESTful APIs and microservices.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
+      <!-- <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -262,7 +272,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+          <p><a href="mailto:example@gmail.com">sudanmd2002@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -277,6 +287,19 @@
           </p>
         </div>
       </div>
+      
+      -->
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" onclick="sendEmail()">Send</button>
+      </form>
     </section>
 
     <style scr="style.js"></style>
