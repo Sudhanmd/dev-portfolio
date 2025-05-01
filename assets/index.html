@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dev-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sudan MD</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Sudan MD</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" ondblclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#about" ondblclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" ondblclick="toggleMenu()">Skills</a></li>
+          <li><a href="#education" ondblclick="toggleMenu()">Education</a></li>
+          <li>
+            <a href="#experience" ondblclick="toggleMenu()">Experience</a>
+          </li>
+          <li><a href="#contact" ondblclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="section__pic-container">
+        <img
+          src="./assets/profilee.jpg"
+          alt="Sudan MD profile picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sudhan Md</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href= 'https://acrobat.adobe.com/id/urn%3Aaaid%3Asc%3AAP%3A21bc2ae1-5246-49db-80a9-cbd82e893c3f/?x_api_client_id=adobe_com&filetype=application%2Fpdf&viewer%21megaVerb=group-discover'"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sudan-md-6780bb225/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Sudhanmd'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>7+ months <br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate Backend Developer with expertise in building
+              robust and scalable web applications. My focus is on creating
+              efficient server-side solutions and RESTful APIs. I enjoy solving
+              complex problems and continuously learning new technologies to
+              improve my skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="skills-sub-container">
+          <h3>Backend Development</h3>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h4>Node.js</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h4>Java</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h4>Python</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h4>RESTful APIs</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="skills-sub-container">
+          <h3>Databases</h3>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h4>MongoDB</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h4>PostgreSQL</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h4>MySQL</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <!-- <p class="section__text__p1">Browse My</p> -->
+      <h1 class="title">Education</h1>
+      <div class="education-details-container">
+        <div class="education-containers">
+          <div class="details-container">
+            <h3>Bachelor's Degree</h3>
+            <p>Computer Science & Engineering</p>
+            <p>University Name : Muthayammal Engineering College @Rasipuram</p>
+            <p>Year of Graduation : 2024 (2020-2024)</p>
+            <p>CGPA : 8.05</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <!-- <p class="section__text__p1">Explore My</p> -->
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-containers">
+          <div class="details-container">
+            <h3>Backend Developer</h3>
+            <p>Coducer Technologies Pvt Ltd @Bangalore</p>
+            <p>7+ months</p>
+            <p style="color: #696969e7">
+              Key Responsibilities and Achievements
+            </p>
+            <p>
+              Developed and maintained robust and scalable backend systems using
+              Node.js. Collaborated with cross-functional teams to analyze,
+              design, and implement new features. Optimized database queries and
+              implemented caching strategies to improve performance. Contributed
+              to the development of RESTful APIs and microservices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <!-- <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:example@gmail.com">sudanmd2002@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/sudan-md-6780bb225/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+      
+      -->
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" onclick="sendEmail()">Send</button>
+      </form>
+    </section>
+
+    <style scr="style.js"></style>
+  </body>
+</html>
